@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌊 Wave Crimelife Comeback</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-wave">🌊</span>
+                <span class="logo-text">WAVE</span>
+                <span class="logo-sub">CRIMELIFE</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#regeln">Regeln</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#stats">Stats</a></li>
+                <li><a href="https://discord.gg/wavelife" target="_blank">Discord</a></li>
+            </ul>
+            <a href="fivem://connect/193.111.248.178:30120" class="connect-btn">
+                🎮 CONNECT
+            </a>
+        </div>
+    </nav>
+
+    <!-- HOME / HERO -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">🌊 COMEBACK 2026</div>
+            <h1 class="hero-title">WAVE CRIMELIFE</h1>
+            <p class="hero-subtitle">Der ultimative deutsche CrimeLife Server</p>
+            <div class="hero-features">
+                <span>🔫 Headshot</span>
+                <span>⚔️ GunGame</span>
+                <span>💛 FFA</span>
+                <span>🎮 Lobby</span>
+                <span>💯 Performance</span>
+            </div>
+
+            <!-- SERVER STATUS -->
+            <div class="server-status">
+                <div class="status-card">
+                    <div class="status-icon">🟢</div>
+                    <div class="status-label">Status</div>
+                    <div class="status-value" id="serverStatus">Online</div>
+                </div>
+                <div class="status-card">
+                    <div class="status-icon">👥</div>
+                    <div class="status-label">Spieler</div>
+                    <div class="status-value" id="playerCount">0/48</div>
+                </div>
+                <div class="status-card">
+                    <div class="status-icon">⏱️</div>
+                    <div class="status-label">Ping</div>
+                    <div class="status-value">~20ms</div>
+                </div>
+                <div class="status-card">
+                    <div class="status-icon">🌍</div>
+                    <div class="status-label">Region</div>
+                    <div class="status-value">🇩🇪 DE</div>
+                </div>
+            </div>
+
+            <div class="hero-buttons">
+                <a href="fivem://connect/193.111.248.178:30120" class="btn-primary">
+                    🎮 SERVER BEITRETEN
+                </a>
+                <a href="https://discord.gg/wavelife" target="_blank" class="btn-secondary">
+                    💬 DISCORD JOINEN
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- REGELN -->
+    <section id="regeln" class="section regeln-section">
+        <div class="container">
+            <h2 class="section-title">📜 SERVER REGELN</h2>
+            <p class="section-subtitle">Damit alle Spaß haben — bitte beachte unsere Regeln</p>
+
+            <div class="regeln-grid">
+                <div class="regel-card">
+                    <div class="regel-number">§1</div>
+                    <h3>🚫 Allgemeines Verhalten</h3>
+                    <ul>
+                        <li>Sei respektvoll zu allen Spielern</li>
+                        <li>Kein Spam im Chat oder Voice</li>
+                        <li>Keine Diskriminierung jeglicher Art</li>
+                    </ul>
+                </div>
+
+                <div class="regel-card">
+                    <div class="regel-number">§2</div>
+                    <h3>🎮 Gameplay</h3>
+                    <ul>
+                        <li>Kein RDM (Random Deathmatch)</li>
+                        <li>Kein VDM (Vehicle Deathmatch)</li>
+                        <li>Kein Teaming im FFA</li>
+                    </ul>
+                </div>
+
+                <div class="regel-card">
+                    <div class="regel-number">§3</div>
+                    <h3>🔫 Waffen & Fights</h3>
+                    <ul>
+                        <li>Nur erlaubte Waffen nutzen</li>
+                        <li>Kein Camping in Safezones</li>
+                        <li>Headshot Only Zone respektieren</li>
+                    </ul>
+                </div>
+
+                <div class="regel-card">
+                    <div class="regel-number">§4</div>
+                    <h3>🛡️ Anti-Cheat</h3>
+                    <ul>
+                        <li>Keine Cheats oder Hacks</li>
+                        <li>Keine Modifikationen am Spiel</li>
+                        <li>Keine Glitches ausnutzen</li>
+                    </ul>
+                </div>
+
+                <div class="regel-card">
+                    <div class="regel-number">§5</div>
+                    <h3>📸 Aufnahmepflicht</h3>
+                    <ul>
+                        <li>Bei Events: Aufnahme empfohlen</li>
+                        <li>Reports nur mit Beweisen</li>
+                        <li>Mindestens 30 Sekunden Material</li>
+                    </ul>
+                </div>
+
+                <div class="regel-card">
+                    <div class="regel-number">§6</div>
+                    <h3>👮 Bei Verstößen</h3>
+                    <ul>
+                        <li>Warns → Ajail → Ban</li>
+                        <li>Multi-Accounts = Permaban</li>
+                        <li>Beleidigung Team = harte Strafe</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regeln-footer">
+                <p>⚠️ Unwissenheit schützt vor Strafe nicht!</p>
+                <p>Bei Fragen → öffne ein <strong>Support Ticket</strong> im Discord</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM -->
+    <section id="team" class="section team-section">
+        <div class="container">
+            <h2 class="section-title">👥 UNSER TEAM</h2>
+            <p class="section-subtitle">Die Wave Crimelife Family hinter dem Server</p>
+
+            <div class="team-grid">
+                <!-- OWNER -->
+                <div class="team-card owner">
+                    <div class="team-rank">👑 PROJEKTINHABER</div>
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder">F</div>
+                    </div>
+                    <h3>Flaxy187</h3>
+                    <p class="team-role">Founder & Owner</p>
+                    <p class="team-desc">Der Kopf hinter Wave Crimelife</p>
+                </div>
+
+                <!-- ADMIN -->
+                <div class="team-card admin">
+                    <div class="team-rank">🎯 PROJEKTLEITUNG</div>
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder">?</div>
+                    </div>
+                    <h3>Bewerbung offen</h3>
+                    <p class="team-role">Projektleitung</p>
+                    <p class="team-desc">Bewirb dich im Discord!</p>
+                </div>
+
+                <!-- DEV -->
+                <div class="team-card dev">
+                    <div class="team-rank">🛠️ DEVELOPER</div>
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder">?</div>
+                    </div>
+                    <h3>Bewerbung offen</h3>
+                    <p class="team-role">Developer</p>
+                    <p class="team-desc">Du kannst coden? Komm zu uns!</p>
+                </div>
+
+                <!-- MOD -->
+                <div class="team-card mod">
+                    <div class="team-rank">🚓 MODERATION</div>
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder">?</div>
+                    </div>
+                    <h3>Bewerbung offen</h3>
+                    <p class="team-role">Moderator</p>
+                    <p class="team-desc">Hilf uns den Server zu betreuen!</p>
+                </div>
+            </div>
+
+            <div class="team-cta">
+                <h3>🚀 Werde Teil des Teams!</h3>
+                <p>Wir suchen aktive & engagierte Mitglieder</p>
+                <a href="https://discord.gg/wavelife" target="_blank" class="btn-primary">
+                    💬 Im Discord bewerben
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SHOP -->
+    <section id="shop" class="section shop-section">
+        <div class="container">
+            <h2 class="section-title">🛒 WAVE SHOP</h2>
+            <p class="section-subtitle">Unterstütze den Server & sichere dir Vorteile</p>
+
+            <div class="shop-banner">
+                <span>🚧 Shop kommt bald! 🚧</span>
+                <p>Wir arbeiten an unserem VIP & Coin System</p>
+            </div>
+
+            <div class="shop-grid">
+                <div class="shop-card bronze">
+                    <div class="shop-rank">🥉 BRONZE VIP</div>
+                    <div class="shop-price">4,99€</div>
+                    <ul>
+                        <li>✅ Bronze Rolle</li>
+                        <li>✅ Bronze Tag Ingame</li>
+                        <li>✅ 50.000$ Startgeld</li>
+                        <li>✅ Priority Queue</li>
+                    </ul>
+                    <button class="btn-disabled">Bald verfügbar</button>
+                </div>
+
+                <div class="shop-card silver">
+                    <div class="shop-rank">🥈 SILVER VIP</div>
+                    <div class="shop-price">9,99€</div>
+                    <ul>
+                        <li>✅ Silver Rolle</li>
+                        <li>✅ Silver Tag Ingame</li>
+                        <li>✅ 150.000$ Startgeld</li>
+                        <li>✅ Custom Skins</li>
+                        <li>✅ Priority Queue</li>
+                    </ul>
+                    <button class="btn-disabled">Bald verfügbar</button>
+                </div>
+
+                <div class="shop-card gold popular">
+                    <div class="popular-badge">⭐ BELIEBT</div>
+                    <div class="shop-rank">🥇 GOLD VIP</div>
+                    <div class="shop-price">19,99€</div>
+                    <ul>
+                        <li>✅ Gold Rolle</li>
+                        <li>✅ Gold Tag Ingame</li>
+                        <li>✅ 500.000$ Startgeld</li>
+                        <li>✅ Custom Skins</li>
+                        <li>✅ Custom Waffen Skins</li>
+                        <li>✅ Priority Queue</li>
+                        <li>✅ Exklusive Events</li>
+                    </ul>
+                    <button class="btn-disabled">Bald verfügbar</button>
+                </div>
+
+                <div class="shop-card diamond">
+                    <div class="shop-rank">💎 DIAMOND VIP</div>
+                    <div class="shop-price">39,99€</div>
+                    <ul>
+                        <li>✅ Diamond Rolle</li>
+                        <li>✅ Diamond Tag Ingame</li>
+                        <li>✅ 1.000.000$ Startgeld</li>
+                        <li>✅ Alle Skins</li>
+                        <li>✅ Custom Auto</li>
+                        <li>✅ VIP Discord Channel</li>
+                        <li>✅ Top Priority Queue</li>
+                    </ul>
+                    <button class="btn-disabled">Bald verfügbar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section id="stats" class="section stats-section">
+        <div class="container">
+            <h2 class="section-title">📊 SERVER STATS</h2>
+            <p class="section-subtitle">Top Spieler & Leaderboards</p>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">🏆</div>
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Top Kills</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⚔️</div>
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Battles Gewonnen</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">💰</div>
+                    <div class="stat-number">0$</div>
+                    <div class="stat-label">Top Geld</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🎯</div>
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Headshots</div>
+                </div>
+            </div>
+
+            <div class="leaderboard">
+                <h3>🏆 TOP 10 SPIELER</h3>
+                <div class="leaderboard-list">
+                    <div class="leaderboard-item">
+                        <span class="rank gold">#1</span>
+                        <span class="player">- Warten auf Daten -</span>
+                        <span class="score">0 Kills</span>
+                    </div>
+                    <div class="leaderboard-item">
+                        <span class="rank silver">#2</span>
+                        <span class="player">- Warten auf Daten -</span>
+                        <span class="score">0 Kills</span>
+                    </div>
+                    <div class="leaderboard-item">
+                        <span class="rank bronze">#3</span>
+                        <span class="player">- Warten auf Daten -</span>
+                        <span class="score">0 Kills</span>
+                    </div>
+                    <div class="leaderboard-item">
+                        <span class="rank">#4</span>
+                        <span class="player">- Warten auf Daten -</span>
+                        <span class="score">0 Kills</span>
+                    </div>
+                    <div class="leaderboard-item">
+                        <span class="rank">#5</span>
+                        <span class="player">- Warten auf Daten -</span>
+                        <span class="score">0 Kills</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DISCORD -->
+    <section id="discord" class="section discord-section">
+        <div class="container">
+            <h2 class="section-title">💬 UNSER DISCORD</h2>
+            <p class="section-subtitle">Werde Teil unserer Community!</p>
+
+            <div class="discord-card">
+                <div class="discord-icon">💬</div>
+                <h3>Wave Crimelife Discord</h3>
+                <p>Tritt unserem Discord Server bei für:</p>
+                <ul>
+                    <li>📢 Ankündigungen & Updates</li>
+                    <li>🎫 Support Tickets</li>
+                    <li>🎮 Community Events</li>
+                    <li>💬 Chat mit anderen Spielern</li>
+                    <li>📊 Live Server Status</li>
+                </ul>
+                <a href="https://discord.gg/wavelife" target="_blank" class="btn-discord">
+                    💬 Discord beitreten
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONNECT -->
+    <section id="connect" class="connect-section">
+        <div class="container">
+            <h2 class="section-title">🎮 JETZT SPIELEN!</h2>
+            <p class="section-subtitle">Tritt dem Server bei mit einem Klick</p>
+
+            <div class="connect-box">
+                <h3>🌊 Server IP:</h3>
+                <div class="server-ip">
+                    <code>193.111.248.178:30120</code>
+                    <button onclick="copyIP()" class="copy-btn">📋 Kopieren</button>
+                </div>
+
+                <div class="connect-buttons">
+                    <a href="fivem://connect/193.111.248.178:30120" class="btn-primary btn-large">
+                        🎮 DIRECT CONNECT
+                    </a>
+                    <a href="https://cfx.re/join/3YGKYOB" target="_blank" class="btn-secondary btn-large">
+                        🔗 Über CFX.RE
+                    </a>
+                </div>
+
+                <p class="connect-info">
+                    💡 Klicke auf <strong>DIRECT CONNECT</strong> um automatisch zu joinen!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🌊 Wave Crimelife</h3>
+                    <p>Der ultimative deutsche CrimeLife Server</p>
+                    <p>Powered by Wave V3</p>
+                </div>
+                <div class="footer-section">
+                    <h4>📋 Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#regeln">Regeln</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#shop">Shop</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>💬 Community</h4>
+                    <ul>
+                        <li><a href="https://discord.gg/wavelife" target="_blank">Discord</a></li>
+                        <li><a href="#connect">Server beitreten</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>⚖️ Rechtliches</h4>
+                    <ul>
+                        <li><a href="impressum.html">Impressum</a></li>
+                        <li><a href="datenschutz.html">Datenschutz</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Wave Crimelife Comeback. Alle Rechte vorbehalten.</p>
+                <p>🌊 #JoinTheWave</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
